@@ -24,17 +24,17 @@ const Logements = () => {
             },
         })
             .then(function (response) {
-                console.log(response);
+                // console.log(response);
                 return response.json();
             })
             .then(function (acces) {
                 const logements = acces.find((item) => item.id === id);
-                console.log(logements);
+                // console.log(logements);
                 setLogements(logements);
                 window.scrollTo(0, 0);
             })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
                 setError(error);
             });
     };

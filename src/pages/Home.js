@@ -18,16 +18,16 @@ const Home = () => {
             },
         })
             .then(function (response) {
-                console.log(response);
+                // console.log(response);
                 return response.json();
             })
 
             .then(function (data) {
-                console.log(data);
+                // console.log(data);
                 setData(data);
             })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
                 setError(error);
             });
     };
