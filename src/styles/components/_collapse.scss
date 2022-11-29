@@ -157,20 +157,30 @@
   .acces__collapse {
     max-width: none;
   }
-}
-
-// Breakpoint tablette
-@media screen and (max-width: 991px) {
-  .acces__collapse {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    & .accordion {
-      width: 100%;
+  .logements__collapse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .accordion {
+      width: 48%;
+      margin: inherit;
     }
   }
 }
+
+// Breakpoint tablette
+@media screen and (min-width: 991px) {
+  .logements__collapse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .accordion {
+      width: 48%;
+      margin: inherit;
+    }
+  }
+}
+
 
 // Breakpoint mobile
 @media screen and (max-width: 576px) {
